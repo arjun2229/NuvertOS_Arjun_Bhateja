@@ -1,0 +1,15 @@
+<!-- src/app/app.component.html -->
+<mat-toolbar color="black">
+  <div class="center-title"><span class="toolbar-title" routerLink="">Compounds</span></div>
+  
+  <!-- <span class="example-spacer"></span> -->
+  <button
+    mat-icon-button
+    class="upload-button"
+    matTooltip="Upload File"
+    (click)="openUploadDialog($event)"
+  >
+    <mat-icon>cloud_upload</mat-icon>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>

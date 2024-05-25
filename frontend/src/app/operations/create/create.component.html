@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Upload CSV File</h1>
+<div mat-dialog-actions class="buttons">
+  <input type="file" (change)="selectFile($event)" />
+  <button mat-raised-button color="primary" (click)="uploadFile()">
+    Upload
+  </button>
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+</div>

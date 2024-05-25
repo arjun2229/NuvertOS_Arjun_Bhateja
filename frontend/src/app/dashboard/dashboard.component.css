@@ -1,0 +1,105 @@
+/* Set a light background for the grid tiles */
+mat-grid-tile {
+  background: #f0f4f8;
+}
+
+/* Card list styling for layout */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; /* Add some padding around the card list */
+}
+
+/* Card styling with spacing */
+.card {
+  margin-bottom: 20px;
+  width: calc(20% - 10px);
+  box-sizing: border-box;
+}
+
+/* mat-card styling with new color and shadow */
+mat-card {
+  height: 38vh;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  border-radius: 12px; /* Slightly increased border radius for a smoother look */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* mat-card hover effect */
+mat-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
+  transform: translateY(-5px);
+}
+
+/* Card header styling */
+mat-card-header {
+  background-color: #3949ab; /* Primary color for header */
+  color: #ffffff;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Card title styling */
+mat-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Image styling within cards */
+img {
+  height: 27vh;
+  width: 100%;
+  object-fit: contain; /* Ensure image covers the area without stretching */
+  border-bottom: 2px solid #e0e0e0;
+  
+}
+
+/* Card actions styling */
+mat-card-actions button {
+  color: #3949ab; /* Primary color for icons */
+  margin: 0 5px; /* Add some spacing between the buttons */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+mat-card-actions button:hover {
+  color: #283593; /* Darker color on hover for better feedback */
+}
+
+mat-card-actions button[color="warn"] {
+  color: #d32f2f; /* Warning color for delete button */
+}
+
+/* Container for card content management */
+.cm-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+  justify-content: space-between;
+  background-color: #f0f4f8; /* Light background for the whole container */
+  padding: 20px; /* Add some padding around the container */
+  box-sizing: border-box;
+}
+
+/* Tooltip styling */
+.mat-tooltip {
+  font-size: 14px;
+}
+.image{
+  position: relative;
+  width: 200px; /* Set the desired width and height of the square container */
+  height: 200px;
+  /* object-fit: contain; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f0f0f0;  */
+}

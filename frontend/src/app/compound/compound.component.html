@@ -1,0 +1,27 @@
+<div class="detail">
+  <div class="center">
+    <h1>
+      {{ compound && compound.CompoundName ? compound.CompoundName : "" }}
+      <a
+        *ngIf="compound && compound.strImageAttribution"
+        target="_blank"
+        [href]="
+          compound && compound.strImageAttribution ? compound.strImageAttribution : ''
+        "
+        #tooltip="matTooltip"
+        matTooltip="Image Attribution"
+        ><mat-icon>link</mat-icon></a
+      >
+    </h1>
+  </div>
+  <div class="center">
+    <img [src]="compound && compound.strImageSource ? compound.strImageSource : ''" />
+  </div>
+  <div class="center-description">
+    {{
+      compound && compound.CompounrDescription
+        ? compound.CompounrDescription
+        : ""
+    }}
+  </div>
+</div>

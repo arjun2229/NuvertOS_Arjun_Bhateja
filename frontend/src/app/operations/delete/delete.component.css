@@ -1,0 +1,12 @@
+.cm-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
